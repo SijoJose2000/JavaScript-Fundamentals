@@ -7,10 +7,20 @@ let arr = [1, 2];
 arr = Array.from(new Set(arr));
 
 const newArray = arr.reduce(
-  (a, v) => a.concat(a.map((r) => [v].concat(r))),
+  (a, v) => {
+    return a.concat(
+      a.map((r) => {
+        return [v].concat(r);
+      })
+    );
+  },
   [[]]
 );
 
+// const newArray = arr.reduce(
+//   (a, v) => a.concat(a.map((r) => [v].concat(r))),
+//   [[]]
+// );
 console.log(newArray);
 
 // // arr = [...new Set(arr)];

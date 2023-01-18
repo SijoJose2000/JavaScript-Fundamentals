@@ -1,8 +1,8 @@
 // Write a program to convert time 24 hours to 12 hours.
 
 function getTwelveHourFormat(time) {
-  if (time > 23) {
-    return "Not a valid hour";
+  if (0 > time || time > 23) {
+    return "Not a valid hour.";
   }
 
   if (time === 0) {
@@ -14,6 +14,6 @@ function getTwelveHourFormat(time) {
   } else return time + "am";
 }
 
-let time = 23;
+let time = 13;
 
 console.log(getTwelveHourFormat(time));

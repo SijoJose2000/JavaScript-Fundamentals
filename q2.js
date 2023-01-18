@@ -19,6 +19,7 @@ string is used as the title. */
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // inputString = "col1,col2\na,b\nc,d\ne,f";
+
 inputString = "col1,col2,col3,col4\na,b,c,d\ne,f,g,h\ni,j,k,l";
 
 // Getting the columnName array by slice and split
